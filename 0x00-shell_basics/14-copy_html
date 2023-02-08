@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.HTML" -newer "../" -exec cp {} ../ \;
+find . -name "*.HTML" -newer .. -not -path "../*" -exec cp {} .. \;
